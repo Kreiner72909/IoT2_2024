@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}home{% endblock %}
+{% block content %}
+
+<div class="container">
+    <h1> Køkken </h1>
+    <div class="input-group mb-3">
+        <form action="/taend/" method="POST"><button class="btn btn-outline-secondary"> Tænd LED</button></form>
+        <form action="/sluk/" method="POST"><button class="btn btn-outline-secondary"> Sluk LED</button></form>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}home{% endblock %}
+{% block content %}
+<meta http-equiv="refresh" content="60"> 
+<div class="container">
+<h1> Marken </h1>
+<h4 class="text-dark"> Batteri procent: {{data}}%</h4>
+<img class="img-fluid float-left" src="data:image/png;base64,{{mark_temperature}}">
+<img class="img-fluid" src="data:image/png;base64,{{mark_humidity}}">
+<img class="img-fluid float-right" src="data:image/png;base64,{{mark_moisture}}"
+</div>
+{% endblock %}
